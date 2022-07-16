@@ -19,7 +19,7 @@ for rollnum in rollnumbers:
         header[0]='Roll num'
         flag=True
 result.insert(0,header) 
-# open a file in append mode with no newline (writer inserts a newline automaticaly)
+# open a file in append mode with no newline (writer inserts a newline automatically)
 with open('marks.csv','a',newline='') as f:
     file=csv.writer(f)
     file.writerows(result)
